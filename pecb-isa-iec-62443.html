@@ -2,37 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PECB ISA/IEC 62443 Lead Implementer - Certification Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PECB ISA/IEC 62443 Lead Implementer — Certification Status</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       max-width: 900px;
       margin: 40px auto;
+      padding: 0 20px;
       line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 {
       color: #1f2937;
+      background: #ffffff;
     }
-    .step {
-      margin-bottom: 25px;
+
+    h1 {
+      margin-bottom: 5px;
+      color: #17365d;
+    }
+
+    h2 {
+      color: #17365d;
+    }
+
+    .name {
+      margin-top: 0;
+      color: #4b5563;
+    }
+
+    .status-card {
+      margin-top: 30px;
+      padding: 25px;
+      border: 1px solid #d1fae5;
+      border-left: 7px solid #16a34a;
+      border-radius: 10px;
+      background: #f0fdf4;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 8px 14px;
+      margin-bottom: 12px;
+      border-radius: 999px;
+      background: #16a34a;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .pending-box {
+      margin-top: 20px;
       padding: 18px;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      background: #f9fafb;
-    }
-    .completed {
-      border-left: 6px solid #16a34a;
-    }
-    .current {
       border-left: 6px solid #2563eb;
+      border-radius: 8px;
       background: #eff6ff;
     }
-    .pending {
-      border-left: 6px solid #9ca3af;
+
+    .evidence {
+      margin-top: 35px;
     }
-    .status {
-      font-weight: bold;
+
+    .evidence img {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      margin: 20px auto;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .privacy-note {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
     }
   </style>
 </head>
@@ -40,44 +95,42 @@
 <body>
 
   <h1>PECB ISA/IEC 62443 Lead Implementer</h1>
-  <p><strong>Caroline Madeleine JULIEN</strong></p>
+  <p class="name"><strong>Caroline Madeleine JULIEN</strong></p>
 
-  <h2>Certification status</h2>
+  <div class="status-card">
+    <div class="status-badge">Exam successfully passed</div>
 
-  <p>
-    This page documents my progression towards the
-    <strong>PECB ISA/IEC 62443 Lead Implementer</strong> certification.
-  </p>
+    <h2>Certification status</h2>
 
-  <div class="step completed">
-    <h3>Step 1 — Training started</h3>
-    <p class="status">Status: Completed</p>
     <p>
-      The training process for the PECB ISA/IEC 62443 Lead Implementer certification has started.
+      I have successfully passed the
+      <strong>PECB ISA/IEC 62443 Lead Implementer examination</strong>.
     </p>
+
+    <div class="pending-box">
+      <strong>Certification application pending.</strong>
+      <br>
+      The certificate number will be added once the certification is officially issued.
+    </div>
   </div>
 
-  <div class="step current">
-    <h3>Step 2 — Training completion</h3>
-    <p class="status">Status: In progress</p>
-    <p>
-      Training completion will be documented here once the course has been completed.
+  <section class="evidence">
+    <h2>Examination result</h2>
+
+    <img
+      src="pecb-isa-iec-62443-exam-passed.png"
+      alt="PECB ISA/IEC 62443 Lead Implementer examination successfully passed"
+    >
+
+    <p class="privacy-note">
+      Examination identifiers have been hidden from public view to protect privacy
+      and prevent impersonation.
     </p>
-  </div>
+  </section>
 
-  <div class="step pending">
-    <h3>Step 3 — Certification</h3>
-    <p class="status">Status: Pending</p>
-    <p>
-      Final certification status will be updated after the exam and official confirmation.
-    </p>
-  </div>
-
-  <h2>Current position</h2>
-
-  <p>
-    <strong>Current status: Training started; certification process in progress.</strong>
-  </p>
+  <footer>
+    Certification status page — PECB ISA/IEC 62443 Lead Implementer
+  </footer>
 
 </body>
 </html>
